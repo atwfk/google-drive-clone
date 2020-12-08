@@ -1,0 +1,355 @@
+body {
+    color: #4c4c4c;
+    font: 400 16px/1.667 "Open Sans", sans-serif;
+    position: relative;
+}
+
+/********** start overriding navbar **********/
+
+.navbar{
+    background: rgba(0,0,0,0.0);
+}
+
+.navbar .collapsed,
+.navbar-toggle{
+    margin-top: -20px;
+}
+
+.navbar .collapse .icon-bar,
+.navbar-toggle .icon-bar{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(77, 72, 72);
+}
+
+.navbar .collapse ul li a{
+    text-align: center;
+}
+
+.navbar .navbar-brand .lockup-logo {
+    width: 112px;
+    height: 36px;
+}
+
+.navbar .navbar-brand .lockup-brand{
+    opacity: 0.54;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
+.navbar .navbar-nav li a{
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar .navbar-nav li button{
+    margin-right: -200px;
+}
+
+.navbar-nav li a:focus,
+.navbar-nav li a:hover{
+    text-decoration: underline;
+    background:none;
+}
+
+/********** end overriding navbar **********/
+
+/********** start section with photo background **********/
+
+.background-photo{
+    height: 800px;
+    background: url(https://www.google.com/drive/static/images/home/intro-1600.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.background-photo img{
+    width: 88px;
+    margin-bottom: 20px;
+}
+
+.background-photo h1{
+    font-size: 60px;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+    font-weight: 300;
+    font-family: "open sans",arial,sans-serif;
+    margin-bottom: 30px;
+}
+
+.background-photo .headline-cta-section{
+    background: #fff;
+    color: #4c4c4c;
+    box-shadow: 1px 1.5px 4px 1px rgba(0,0,0,0.1);
+    height: 335px;
+    padding: 32px 30px;
+    margin-bottom: 40px;
+}
+
+.background-photo .headline-cta-section h2 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.background-photo .headline-cta-section p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.background-photo .headline-cta-section button,
+.download button,
+.navbar .navbar-nav li button {
+    padding: auto;
+    background-color: #4386fc;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px 40px;
+    border-radius: 0;
+}
+
+.background-photo .headline-cta-section button:hover,
+.download button:hover,
+.navbar .navbar-nav li button:hover{
+    background: #2263d6;
+    text-decoration: underline;
+}
+
+.background-photo i{
+    font-size: 24px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/********** end section with photo background **********/
+
+/********** start section filetypes **********/
+
+.filetypes{
+    padding: 100px 0;
+}
+
+.filetypes .files{
+    position: relative;
+    animation-name: show;
+    animation-duration: 2s;
+}
+
+@keyframes show{
+	0%{
+        transform: scale(0.1);
+        top: 100px;
+        left: 100px;
+    }
+	100%{
+        transform: scale(1);
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.filetypes div div img {
+    padding-top: 40px;
+}
+
+.filetypes img{
+    width: 88px;
+    position: absolute;
+    visibility: hidden;
+    animation-name: hide;
+    animation-duration: 1s;
+}
+
+@keyframes hide{
+	0%{
+        transform: scale(1);
+        visibility: visible;
+    }
+    40%{
+        transform: scale(1.6);
+    }
+	100%{
+        transform: scale(0);
+    }
+}    
+
+.filetypes i{
+    margin: 5px;
+}
+
+.filetypes h2,
+.filesanywhere h2,
+.static-example h2,
+.download h2 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.filetypes p,
+.filesanywhere p,
+.static-example p {
+    color: #555555;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+/********** end section filetypes **********/
+
+/********** start section photo-pack **********/
+
+.photo-pack{
+    background: url(https://www.google.com/drive/static/images/home/photo-1-2200.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+/********** end section photo-pack **********/
+
+/********** start section filesanywhere **********/
+
+.filesanywhere{
+    padding: 50px 0;
+}
+
+.filesanywhere .column-right{
+    float: right;
+    max-width: 100%;
+}
+
+.filesanywhere .column-left{
+    padding-top: 50PX;
+    max-width: 100%;
+}
+
+.filesanywhere img,
+.static-example img{
+    max-width: 100%;
+}
+
+/********** end section filesanywhere **********/
+
+/********** start section-photo-travel-1 **********/
+
+.photo-travel-1{
+    background: url(https://www.google.com/drive/static/images/home/photo-2-1600.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+/********** end section-photo-travel-1 **********/
+
+/********** start section static-example **********/
+
+.static-example{
+    padding: 100px 0;
+}
+
+/********** end section static-example **********/
+
+/********** start section-photo-travel-2 **********/
+
+.photo-travel-2{
+    background: url(https://www.google.com/drive/static/images/home/photo-3-1600.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+/********** end section-photo-travel-2 **********/
+
+/********** start section download **********/
+
+.download{
+    padding: 100px 0;
+}
+
+.download img,
+.download h2,
+.download button{
+    margin-bottom: 20px;
+}
+
+.download a,
+footer a{
+    color: #4386fc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.download a:hover,
+footer a:hover{
+    text-decoration: underline;
+    color: #4386fc;
+}
+
+/********** end section download **********/
+
+/********** strat footer **********/
+
+footer{
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+hr{
+    border-top: 1px solid #9d9d9d;
+}
+
+footer h4,
+footer a{
+    font-size: 14px;
+}
+
+/********** end footer **********/
+
+/********** start media query **********/
+
+@media(max-width: 768px){
+
+    .navbar .navbar-nav li button{
+        display: none;
+    }
+
+    .background-photo{
+        height: 1200px;
+    }
+
+    .background-photo .headline-cta-section{
+        height: 300px;
+    }
+
+    .filetypes .store-p,
+    .filesanywhere .column-left{
+        text-align: center;
+    }
+
+    footer h4,
+    footer a{
+        font-size: 12px;
+    }
+
+    footer ul{
+        max-width: 100%;
+    }
+
+    .filetypes h2,
+    .filesanywhere h2,
+    .static-example h2,
+    .download h2 {
+        font-size: 24px;
+    }
+
+    .filetypes p,
+    .filesanywhere p,
+    .static-example p {
+        font-size: 16px;
+    }
+}
+
+/********** end media query **********/
